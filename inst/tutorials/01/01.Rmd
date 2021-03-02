@@ -1,0 +1,36 @@
+---
+title: "Introduction to R and RStudio"
+output: learnr::tutorial
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+
+### Installation of R, RStudio and R packages
+
+```{r question1, echo=FALSE}
+quiz( caption = "Exercise", 
+  question("We can use https://cloud.r-project.org to download R.",
+    answer("TRUE", correct=TRUE),
+    answer("FALSE")
+  ),
+  question("We can use http://www.rstudio.com/download to download RStudio.",
+    answer("TURE", correct=TRUE),
+    answer("FALSE")
+  ),
+  question("Which of the following code using to install packages into R will cause an error?",
+    answer("install.packages(\"tidyverse\")"),
+    answer("install.packages(tidyverse)", correct = T),
+    answer("install.packages(\'tidyverse\')")
+  )
+)
+```
+
+
+
+
