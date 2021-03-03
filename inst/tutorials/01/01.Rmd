@@ -1,5 +1,5 @@
 ---
-title: "Introduction to R and RStudio"
+title: "R Programming: Zero to Pro"
 output: learnr::tutorial
 runtime: shiny_prerendered
 ---
@@ -9,28 +9,35 @@ library(learnr)
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+### Exercise 1
 
+Write R code to calculate 2+3
 
-### Installation of R, RStudio and R packages
+```{r two-plus-three, exercise=TRUE}
 
-```{r question1, echo=FALSE}
-quiz( caption = "Exercise", 
-  question("We can use https://cloud.r-project.org to download R.",
-    answer("TRUE", correct=TRUE),
-    answer("FALSE")
-  ),
-  question("We can use http://www.rstudio.com/download to download RStudio.",
-    answer("TURE", correct=TRUE),
-    answer("FALSE")
-  ),
-  question("Which of the following code using to install packages into R will cause an error?",
-    answer("install.packages(\"learnr\")"),
-    answer("install.packages(learnr)", correct = T),
-    answer("install.packages(\'learnr\')")
-  )
-)
+```
+
+```{r two-plus-three-solution}
+2 + 3
 ```
 
 
+```{r install-package, echo=FALSE}
+quiz(
+  question("Which of the following code using to install packages into R will cause an error?",
+    answer("install.packages(\"learnr\")"),
+    answer("install.packages(learnr)", correct = T)
+  ),
+    caption = "Install Packages"
+)
+```
 
+Write R code to load the package learnr.
 
+```{r load_package, exercise=TRUE}
+
+```
+
+```{r load_package-solution}
+library(learnr)
+```
