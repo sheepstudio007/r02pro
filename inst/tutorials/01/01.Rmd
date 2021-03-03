@@ -24,9 +24,9 @@ quiz( caption = "Exercise",
     answer("FALSE")
   ),
   question("Which of the following code using to install packages into R will cause an error?",
-    answer("install.packages(\"tidyverse\")"),
-    answer("install.packages(tidyverse)", correct = T),
-    answer("install.packages(\'tidyverse\')")
+    answer("install.packages(\"learnr\")"),
+    answer("install.packages(learnr)", correct = T),
+    answer("install.packages(\'learnr\')")
   )
 )
 ```
