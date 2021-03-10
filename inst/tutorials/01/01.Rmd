@@ -11,6 +11,8 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ### Exercise 1
 
+![](https://youtu.be/M99XF_Mj-6Y)
+
 Write R code to calculate 2+3
 
 ```{r two-plus-three, exercise=TRUE}
