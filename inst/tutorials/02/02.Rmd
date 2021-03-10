@@ -55,7 +55,7 @@ log(216, 6)
 
 #### Part 2: Assignment
 
-Create a  numeric variable called  "x" with value 2021, then display its value.
+Create a variable called "x" with value 2021, then display its value.
 ```{r 2021, exercise=TRUE}
 
 ```
@@ -65,7 +65,7 @@ x <- 2021
 x
 ```
 
-Create a sequence called "y" containing the sequence of integers from 1 to 10, then display its value.
+Create a variable called "y" containing the sequence of integers from 1 to 10, then display its value.
 ```{r seq_cre, exercise=TRUE}
 
 ```
@@ -75,18 +75,7 @@ y <- 1:10
 y
 ```
 
-```{r numeric-plus-vector, echo=FALSE}
-quiz(
-  question("Will there an be error for 'x + y'?",
-    answer("Yes"),
-    answer("No", correct = T)
-  ),
-    caption = NULL
-)
-```
-
-
-Creat a string called "z" with value "sheepstudio", then display its value.
+Create a variable called "z" with value "sheepstudio", then display its value.
 ```{r sheepstudio, exercise=TRUE}
 
 ```
