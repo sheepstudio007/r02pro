@@ -9,7 +9,7 @@ library(learnr)
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-### Exercise 1
+### Exercise 1: Installation of R, RStudio, and R packages
 
 ![](https://youtu.be/M99XF_Mj-6Y)
 
