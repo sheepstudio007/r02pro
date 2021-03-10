@@ -27,8 +27,8 @@ Write R code to calculate 2+3
 ```{r install-package, echo=FALSE}
 quiz(
   question("Which of the following code using to install packages into R will cause an error?",
-    answer("install.packages(\"learnr\")"),
-    answer("install.packages(learnr)", correct = T)
+    answer("install.packages(\"learnr\")", correct = T),
+    answer("install.packages(learnr)")
   ),
     caption = "Install Packages"
 )
