@@ -9,11 +9,11 @@ library(learnr)
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## Lesson 1: Installation of R, RStudio, and R packages
+### Lesson 1: Installation of R, RStudio, and R packages
 
 ![](https://youtu.be/M99XF_Mj-6Y)
 
-## Exercise 1
+### Exercise 1
 
 Write R code to calculate 2+3
 
