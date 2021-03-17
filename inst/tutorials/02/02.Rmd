@@ -9,6 +9,11 @@ library(learnr)
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+
+### Youtube Video
+
+![](https://youtu.be/Oe-nCyRspa8)
+
 ### Exercise 2
 
 #### Part 1: Use R as a calculator
