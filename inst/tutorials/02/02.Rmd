@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ### Youtube Video
 
-![](https://youtu.be/Oe-nCyRspa8)
+![](https://youtu.be/uHlGE9c7V6s)
 
 ### Exercise 2
 
