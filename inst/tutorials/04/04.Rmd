@@ -1,0 +1,58 @@
+---
+title: "R Programming: Zero to Pro"
+output: learnr::tutorial
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+```
+```{r prepare-hwys}
+small_displ <- mpg$displ < 3
+hwy1 <- mpg$hwy[small_displ] 
+big_displ <- mpg$displ >= 3
+hwy2 <- mpg$hwy[big_displ] 
+```
+### Exercise 4
+
+Using the `mpg` data set, we want to compare highway miles per gallon (`hwy`) on the cars with certain engine displacement (`displ`).
+
+1. Create a vector variable `hwy1` that contains the `hwy` for all the cars with `displ` smaller than 3 and calculate its summary.
+
+```{r hwy1, exercise=TRUE}
+
+```
+
+```{r hwy1-solution}
+small_displ <- mpg$displ < 3
+hwy1 <- mpg$hwy[small_displ] 
+summary(hwy1)
+```
+
+2. Create a vector variable `hwy2` that contains the `hwy` for all the cars with `displ` larger than or equal to 3 and calculate its summary.
+
+```{r hwy2, exercise=TRUE}
+
+```
+
+```{r hwy2-solution}
+big_displ <- mpg$displ >= 3
+hwy2 <- mpg$hwy[big_displ] 
+summary(hwy2)
+```
+
+
+3. Find the differences in mean and median for `hwy1` and `hwy2`. 
+
+
+```{r hwydiff, exercise=TRUE, exercise.setup = "prepare-hwys"}
+
+```
+
+```{r hwydiff-solution}
+mean(hwy1) - mean(hwy2)
+median(hwy1) - median(hwy2)
+```
+
