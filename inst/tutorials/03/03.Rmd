@@ -8,8 +8,6 @@ runtime: shiny_prerendered
 library(learnr)
 knitr::opts_chunk$set(echo = FALSE)
 library(tidyverse)
-iris <- as_tibble(iris)
-iris$Species <- as.vector(iris$Species)
 ```
 ### Youtube Video
 
