@@ -11,6 +11,9 @@ library(tidyverse)
 iris <- as_tibble(iris)
 iris$Species <- as.vector(iris$Species)
 ```
+### Youtube Video
+
+![](https://youtu.be/6wuwmpeYn8k)
 
 ### Exercise 3
 
