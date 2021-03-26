@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 #### Creating a ggplot
 
-Please use `ggplot2` to show the relationship of `displ`(on the x-axis) and `cty`(on the y-axis) in `mpg`.
+Please use `ggplot2` to generate a scatterplot between `displ`(on the x-axis) and `cty`(on the y-axis) of the `mpg` data.
 
 ```{r cyl, exercise=TRUE}
 
