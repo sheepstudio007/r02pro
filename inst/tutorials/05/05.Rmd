@@ -1,0 +1,27 @@
+---
+title: "R Programming: Zero to Pro"
+output: learnr::tutorial
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+### Exercise 5 
+
+#### Creating a ggplot
+
+Please use `ggplot2` to show the relationship of `displ`(on the x-axis) and `cty`(on the y-axis) in `mpg`.
+
+```{r cyl, exercise=TRUE}
+
+```
+
+```{r cyl-solution}
+library(tidyverse)
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = cty))
+```
+
