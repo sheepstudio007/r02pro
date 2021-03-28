@@ -11,10 +11,11 @@ library(tidyverse)
 ```
 ```{r prepare-hwys}
 small_displ <- mpg$displ < 3
-hwy1 <- mpg$hwy[small_displ] 
+h1 <- mpg$hwy[small_displ] 
 big_displ <- mpg$displ >= 3
-hwy2 <- mpg$hwy[big_displ] 
+h2 <- mpg$hwy[big_displ] 
 ```
+
 ### Exercise 4
 
 Using the `mpg` data set, we want to compare highway miles per gallon (`hwy`) on the cars with certain engine displacement (`displ`).
@@ -26,25 +27,27 @@ Using the `mpg` data set, we want to compare highway miles per gallon (`hwy`) on
 ```
 
 ```{r hwy1-solution}
-small_displ <- mpg$displ < 3
-hwy1 <- mpg$hwy[small_displ] 
+h <- mpg$hwy
+is_displ_small <- mpg$displ < 3
+hwy1 <- h[is_displ_small] 
 summary(hwy1)
 ```
 
-2. Create a vector variable `hwy2` that contains the `hwy` for all the cars with `displ` larger than or equal to 3 and calculate its summary.
+2. Create a vector variable `h2` that contains the `hwy` for all the cars with `displ` larger than or equal to 3 and calculate its summary.
 
-```{r hwy2, exercise=TRUE}
+```{r h2, exercise=TRUE}
 
 ```
 
-```{r hwy2-solution}
-big_displ <- mpg$displ >= 3
-hwy2 <- mpg$hwy[big_displ] 
+```{r h2-solution}
+h <- mpg$hwy
+is_displ_big <- mpg$displ >= 3
+hwy2 <- h[is_displ_big] 
 summary(hwy2)
 ```
 
 
-3. Find the differences in mean and median for `hwy1` and `hwy2`. 
+3. Find the differences in mean and median for `h1` and `h2`. 
 
 
 ```{r hwydiff, exercise=TRUE, exercise.setup = "prepare-hwys"}
