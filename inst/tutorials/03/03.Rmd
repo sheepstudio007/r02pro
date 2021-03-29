@@ -9,7 +9,7 @@ library(learnr)
 knitr::opts_chunk$set(echo = FALSE)
 library(tidyverse)
 ```
-### Youtube Video
+### Lesson3: Introduction to datasets
 
 ![](https://youtu.be/6wuwmpeYn8k)
 
