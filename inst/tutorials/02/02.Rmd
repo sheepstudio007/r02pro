@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 
-### Youtube Video
+### Lesson 2: Using R as a calculator & Variable Assignment
 
 ![](https://youtu.be/jAzjcP1acec)
 
