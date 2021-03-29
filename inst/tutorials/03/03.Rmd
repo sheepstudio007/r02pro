@@ -11,7 +11,7 @@ library(tidyverse)
 ```
 ### Lesson3: Introduction to datasets
 
-![](https://www.youtube.com/watch?v=6wuwmpeYn8k)
+![](https://youtu.be/6wuwmpeYn8k)
 
 ### Exercise 3
 
