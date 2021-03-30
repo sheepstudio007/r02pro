@@ -8,10 +8,11 @@ runtime: shiny_prerendered
 library(learnr)
 knitr::opts_chunk$set(echo = FALSE)
 ```
+### Lesson4: Creating a ggplot
+
+![](https://youtu.be/3KveTw8uDZA)\
 
 ### Exercise 5 
-
-#### Creating a ggplot
 
 Please use `ggplot2` to generate a scatterplot between `displ`(on the x-axis) and `cty`(on the y-axis) of the `mpg` data.
 
