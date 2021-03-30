@@ -16,6 +16,10 @@ big_displ <- mpg$displ >= 3
 h2 <- mpg$hwy[big_displ] 
 ```
 
+### Lesson4: Summary Statistics & Vector Subsetting
+
+![](https://youtu.be/3KveTw8uDZA)
+
 ### Exercise 4
 
 Using the `mpg` data set, we want to compare highway miles per gallon (`hwy`) on the cars with certain engine displacement (`displ`).
