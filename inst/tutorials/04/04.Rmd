@@ -16,7 +16,7 @@ big_displ <- mpg$displ >= 3
 h2 <- mpg$hwy[big_displ] 
 ```
 
-### Lesson4: Summary Statistics & Vector Subsetting
+### Lesson 4: Summary Statistics & Vector Subsetting
 
 ![](https://youtu.be/3KveTw8uDZA)
 
