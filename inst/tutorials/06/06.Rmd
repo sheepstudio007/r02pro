@@ -32,7 +32,6 @@ ggplot(data = mpg) +
 ```
 
 ```{r size-solution}
-library(tidyverse)
 ggplot(data = mpg) + 
   geom_point(mapping = aes(x = displ, y = cty, size = drv))
 ```
@@ -44,7 +43,6 @@ ggplot(data = mpg) +
 ```
 
 ```{r shape-solution}
-library(tidyverse)
 ggplot(data = mpg) + 
   geom_point(mapping = aes(x = displ, y = cty, shape = drv))
 ```
@@ -60,7 +58,6 @@ The following questions may be a bit difficult. Please feel free to look at the 
 ```
 
 ```{r all-solution}
-library(tidyverse)
 ggplot(data = mpg) + 
   geom_point(mapping = aes(x = displ, y = cty, color = drv, shape = drv))
 ```
@@ -73,7 +70,6 @@ ggplot(data = mpg) +
 ```
 
 ```{r color_shape-solution}
-library(tidyverse)
 ggplot(data = mpg) + 
   geom_point(mapping = aes(x = displ, y = cty, color = drv, shape = fl))
 ```
