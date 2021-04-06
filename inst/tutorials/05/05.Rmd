@@ -10,6 +10,8 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 ### Lesson 5: Creating a ggplot
 
+![](https://youtu.be/Vb1ZSrNby_M)
+
 
 ### Exercise 5 
 
