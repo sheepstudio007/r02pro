@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 
 #### Creating ggplots with aesthetics.
 
-1. Create a scatterplot of `displ`(on the x-axis) and `cty`(on the y-axis) using the  `mpg` dataset, and use `blue` for all points.
+1. Create a scatterplot of `displ`(on the x-axis) and `cty`(on the y-axis) using the  `mpg` dataset, and use `green` for all points.
 
 ```{r blue, exercise=TRUE}
 
@@ -26,7 +26,7 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 ```{r blue-solution}
 library(tidyverse)
 ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = displ, y = cty), color = "blue")
+  geom_point(mapping = aes(x = displ, y = cty), color = "green")
 ```
 
 2. Create a scatterplot of `displ`(on the x-axis) and `cty`(on the y-axis) using the  `mpg` dataset, and map `drv` to the `size` aesthetic, and use `green` for all points.
