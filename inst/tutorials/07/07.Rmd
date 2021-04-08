@@ -9,7 +9,11 @@ library(learnr)
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 ```
 
-### Exercise 7
+### Lesson 7: ggplot2: Aesthetics in scatterplots (II)
+
+![](https://youtu.be/gHW8yg9rhC0)
+
+
 
 #### Creating ggplots with aesthetics.
 
