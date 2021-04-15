@@ -1,0 +1,65 @@
+---
+title: "R Programming: Zero to Pro"
+output: learnr::tutorial
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+```
+
+### Lesson 8 Aesthetics in Scatterplots (III) 
+
+### Exercise 8
+
+1. In `mpg` dataset, among the variables `model`, `year`, `cyl`, and `trans`,
+
+```{r d-plus-e, echo=FALSE}
+quiz(
+  question("how many are continuous?",
+    answer("0"),
+    answer("1"),
+    answer("2", correct = T),
+    answer("3")
+  ),
+    caption = NULL
+)
+```
+
+2. Create a scatterplot of `displ`(on the x-axis) and `cty`(on the y-axis) using the  `mpg` dataset, and map `displ` to the `color` aesthetic.
+
+```{r displ, exercise=TRUE}
+
+```
+
+```{r displ-solution}
+library(tidyverse)
+ggplot(data = mpg) +
+  geom_point(mapping = aes(x = displ, y = hwy, color = displ))
+```
+
+3. Create a scatterplot of `displ`(on the x-axis) and `cty`(on the y-axis) using the  `mpg` dataset, and map `displ` to the `color` aesthetic, map low values of displ to yellow and high values to blue, map `hwy` to the `size` aesthetic, and use `shape = 2` for all points. 
+
+
+```{r color_scale, exercise=TRUE}
+
+```
+
+```{r color_scale-solution}
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = cty, color = displ, size = hwy), shape = 2) +
+  scale_color_continuous(low = "yellow", high = "blue")
+```
+
+4. Create a scatterplot of `displ`(on the x-axis) and `cty`(on the y-axis) using the  `mpg` dataset, and map a logical vector`class == "compact"` to the `shape` aesthetic, and use `size = 2` for all points..
+
+
+```{r logical, exercise=TRUE}
+
+```
+
+```{r logical-solution}
+ggplot(data = mpg) + 
+  geom_point(mapping = aes(x = displ, y = cty, shape = class == "compact"), size = 2)
+```
