@@ -1,0 +1,49 @@
+---
+title: "R Programming: Zero to Pro"
+output: learnr::tutorial
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+```
+
+### Lesson 9
+
+### Exercise 9
+
+1. Create a smoothline fit of `displ`(on the x-axis) and `hwy`(on the y-axis) using the  `mpg` dataset without confidence interval around the smoothline fit.
+
+```{r se, exercise=TRUE}
+
+```
+
+```{r se-solution}
+library(tidyverse)
+ggplot(data = mpg) +
+  geom_smooth(mapping = aes(x = displ, y = hwy), se = FALSE)
+```
+
+2. Using the `mpg` dataset, create smoothline fits of `displ`(on the x-axis) and `hwy`(on the y-axis) with different colors depending on the value of variable `drv`.  
+
+```{r color, exercise=TRUE}
+
+```
+
+```{r color-solution}
+ggplot(data = mpg) +
+  geom_smooth(mapping = aes(x = displ, y = hwy, color = drv))
+```
+
+3. Using the `mpg` dataset, create smoothline fits of `displ`(on the x-axis) and `hwy`(on the y-axis) with green color and different linetypes, depending on the value of variable `drv`.  
+
+```{r linetype, exercise=TRUE}
+
+```
+
+```{r linetype-solution}
+ggplot(data = mpg) +
+  geom_smooth(mapping = aes(x = displ, y = hwy, linetype = drv), color = "green")
+```
+
