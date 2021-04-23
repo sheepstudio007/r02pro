@@ -13,8 +13,7 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 
 ### Exercise 10
 
-1. Recreate the R code necessary to generate the following graph.
-(Tip: Different smoothline fits depend on the value of variable `drv`)
+1. Recreate the R code necessary to generate the following graph.(Tip: Different smoothline fits depend on the value of variable `drv`)
 ![](https://github.com/sheepstudio007/r02pro/raw/master/inst/tutorials/10/pic1.png)
 
 ```{r pic1, exercise=TRUE}
@@ -24,8 +23,8 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 ```{r pic1-solution}
 library(tidyverse)
 ggplot(data = mpg) +
-  geom_point(mapping = aes(x = displ, y = hwy), size = 5) +
-  geom_smooth(mapping = aes(x = displ, y = hwy, group = drv), se = FALSE)
+  geom_point(mapping = aes(x = displ, y = hwy), size = 2) +
+  geom_smooth(mapping = aes(x = displ, y = hwy, group = drv), size = 2, se = FALSE)
 ```
 
 
@@ -37,7 +36,8 @@ ggplot(data = mpg) +
 ```
 
 ```{r pic2-solution}
+library(tidyverse)
 ggplot(data = mpg) +
-  geom_point(mapping = aes(x = displ, y = hwy, color = drv), size = 5) +
-  geom_smooth(mapping = aes(x = displ, y = hwy, linetype = drv), se = FALSE)
+  geom_point(mapping = aes(x = displ, y = hwy, color = drv), size = 2) +
+  geom_smooth(mapping = aes(x = displ, y = hwy, linetype = drv), size = 2, se = FALSE)
 ```
