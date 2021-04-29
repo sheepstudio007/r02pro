@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 
 ### Exercise 11
 
-1. Write R codes using global mapping that generates the following graph.(Tip: Different smoothline fits depend on the value of variable `drv`)
+1. Write R codes using global mapping that generate the following graph.(Tip: Different smoothline fits depend on the value of variable `drv`)
 ![](https://github.com/sheepstudio007/r02pro/raw/master/inst/tutorials/10/pic1.png){width=70%}
 
 ```{r pic1, exercise=TRUE}
@@ -28,7 +28,7 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) +
 ```
 
 
-2. Write R codes using global mapping that generates to generate the following graph.
+2. Write R codes using global mapping that generate the following graph.
 ![](https://github.com/sheepstudio007/r02pro/raw/master/inst/tutorials/10/pic2.png){width=70%}
 
 ```{r pic2, exercise=TRUE}
