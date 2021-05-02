@@ -10,6 +10,7 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 ```
 
 ### Lesson 8 Aesthetics in Scatterplots (III) 
+![](https://youtu.be/bmgSK_bofz8)
 
 ### Exercise 8
 
