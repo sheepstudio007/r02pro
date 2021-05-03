@@ -9,7 +9,8 @@ library(learnr)
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 ```
 
-### Lesson 9
+### Lesson 9: ggplot2: Smoothline Fit via geom_smooth
+![](https://youtu.be/_7iSlYnDY5E)
 
 ### Exercise 9
 
