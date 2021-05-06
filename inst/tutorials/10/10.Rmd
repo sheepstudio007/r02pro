@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 
 ### Lesson 10 ggplot2: Multiple geoms and Aesthetics
 
-![](https://youtu.be/MfXWTvi5-ik)
+![](https://youtu.be/j04dUc5KZ1w)
 
 ### Exercise 10
 
