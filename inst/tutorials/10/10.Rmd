@@ -9,7 +9,9 @@ library(learnr)
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 ```
 
-### Lesson 10
+### Lesson 10 ggplot2: Multiple geoms and Aesthetics
+
+![](https://youtu.be/MfXWTvi5-ik)
 
 ### Exercise 10
 
