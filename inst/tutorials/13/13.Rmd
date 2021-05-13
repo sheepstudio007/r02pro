@@ -1,0 +1,52 @@
+---
+title: "R Programming: Zero to Pro (13)"
+output: learnr::tutorial
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+```
+
+### Lesson 13
+
+### Exercise 13
+
+1. Create a length-8 equal-spaced vector from 20 to 6. What is the increment of the numeric vector?
+
+```{r prop, exercise=TRUE}
+
+```
+
+```{r prop-solution}
+seq(from = 20, to = 6, length.out = 8)
+#The increment number is -2.
+```
+
+2. Create a scatterplot between `depth`(on the x-axis) and `price`(on the y-axis) using the `diam2` data, and set the breaks to start at 55 and end at 65 with increment of 5 on the x axis. 
+(Hint: you can use the following code to create `diam2`: 
+diam2 <- diamonds %>% filter(color == "D") )
+
+```{r dodge, exercise=TRUE}
+
+```
+
+```{r dodge-solution}
+library(tidyverse)
+diam2 <- diamonds %>% filter(color == "D") 
+ggplot(data = diam2) + geom_point(mapping = aes(x = depth, y = price)) +
+ scale_x_continuous(breaks = seq(from = 55, to = 65, by = 5)) 
+```
+
+3. Zoom in the above scatterplot to a region that only shows the points with `depth` between 60 and 65 and `price` between 10K and 15K
+
+```{r limit, exercise=TRUE}
+
+```
+
+```{r limit-solution}
+ggplot(data = diam2) + geom_point(mapping = aes(x = depth, y = price)) +
+coord_cartesian(xlim = c(60, 65), ylim = c(10000, 15000))
+```
+
