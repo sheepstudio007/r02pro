@@ -9,7 +9,9 @@ library(learnr)
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 ```
 
-### Lesson 11
+### Lesson 11 ggplot2: Global and Local Mappings
+
+![](https://youtu.be/xjBFPCkdZiI)
 
 ### Exercise 11
 
